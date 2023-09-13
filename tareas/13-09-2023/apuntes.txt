@@ -1,0 +1,83 @@
+console-log('Hola'); : Puede llevar ';' o no. Eso se puede en JS
+console.log('mundo');
+
+console-log('Hola') console.log('mundo'): Pero esto marca error.
+
+SIEMPRE ES PREFERIBLE USAR ';', QUE ES UNA BUENA PRÁCTICA YA QUE EVITA ERRORES QUE PODRÍAN APARECER.
+
+////////////////////////////////////////////////////////
+
+Recordar lo de hoisting y lo molesto que es (su importancia y esas cosas), var, const, let,...
+
+////////////////////////////////////////////////////////
+RESPECTO A LAS VARIABLES
+  - Es mala práctica declarar variables en una sola línea, que puede entorpecer el proceso de depuración de código.
+    Se puede hacer si es un código pequeñito.
+
+  - El uso de números grandes se permite con big int, el cual evita que un número se imprima con notación científica
+     y se imprima tal cual como es. Para esto solo se debe especificar la letra n al final del número (sin comillas, simplementa se da así).
+
+  - Tomar en cuenta estos casos:
+    console.log("2" / 2); // Esto da como resultado 1, ya que JS lo interpreta como un número el "2" con comillas.
+    console.log("hola" * 4); // No da resultados.
+
+  - Para los strings se puede trabajar con comillas simples y dobles.
+
+  - Se usan las comillas (averiguar como lucen) si se quiere incluir algo dentro de un string:
+    console.log(`Hola ${string}, que tal?`)  // Template strings
+
+  - Booleanos: no cambian
+
+  - ¿Cómo se hacen los null?:
+    let nuevo_numero = null
+
+  - Undefined:
+    let instancia;
+    console.log(instancia) // Imprimirá Undefined
+
+   - Objetos:
+   let user = new Object(); // Constructor de objetos
+   let user1 = {}; // Objeto literal
+
+   let usuario = {   // Definición de un objeto literal
+        name = "Mateo",
+        age = 30,
+        city = "Osorno",
+        "correo electronico" = "mateo@gmail.com"
+   };
+
+   - ¿Cómo imprimir una propiedad de un objeto?:
+      console.log(usuario.name)
+
+   -  También se le prueden agregar atributos:
+      usuario.provincia = "Provincia de Osorno";
+   
+   - Si quiero acceder al atributo de un objeto con una propiedad con más palabras, debo:
+      console.log(usuario["correo electronico"]);
+
+   - Si quiero eliminar la propiedad de un objeto:
+      delete usuario.provincia
+
+   - Si quiero saber el tipo de una variable:
+      console.log(typeof usuario.provincia)
+
+    - Transformando variables:
+        edad = 24;
+        console.log(typeof edad) // int
+        edad = String(edad);
+        console.log(typeof edad) // string
+
+        // A la inversa
+        edad = "24";
+        console.log(typeof edad) // string
+        edad = Number(edad);
+        console.log(typeof edad) // int
+
+    - NOTA: LOS NÚMEROS, EN LA CONSOLA, SE IMPRIMEN CON COLOR VERDE
+
+//////////////////////////////////////////////////////////////////////////
+5 Prompt-confirm
+
+let edad = prompt('¿Cuál es tu edad?', 0)
+alert(`Tienes ${edad} años`)
+
