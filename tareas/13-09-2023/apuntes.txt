@@ -1,6 +1,14 @@
 console-log('Hola'); : Puede llevar ';' o no. Eso se puede en JS
 console.log('mundo');
 
+  # Funciona
+  - console.log("Estos son números");
+     [1, 2, 3, 4].forEach(console.log);
+
+  # No funciona
+  - console.log("Estos son números")
+     [1, 2, 3, 4].forEach(console.log);
+
 console-log('Hola') console.log('mundo'): Pero esto marca error.
 
 SIEMPRE ES PREFERIBLE USAR ';', QUE ES UNA BUENA PRÁCTICA YA QUE EVITA ERRORES QUE PODRÍAN APARECER.
@@ -10,6 +18,7 @@ SIEMPRE ES PREFERIBLE USAR ';', QUE ES UNA BUENA PRÁCTICA YA QUE EVITA ERRORES 
 Recordar lo de hoisting y lo molesto que es (su importancia y esas cosas), var, const, let,...
 
 ////////////////////////////////////////////////////////
+
 RESPECTO A LAS VARIABLES
   - Es mala práctica declarar variables en una sola línea, que puede entorpecer el proceso de depuración de código.
     Se puede hacer si es un código pequeñito.
@@ -25,6 +34,7 @@ RESPECTO A LAS VARIABLES
 
   - Se usan las comillas (averiguar como lucen) si se quiere incluir algo dentro de un string:
     console.log(`Hola ${string}, que tal?`)  // Template strings
+    // El profe considera feo usar '+' para concatenar. Preferible usar esto
 
   - Booleanos: no cambian
 

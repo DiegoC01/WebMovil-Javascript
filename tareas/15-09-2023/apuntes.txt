@@ -1,0 +1,4 @@
+// Operador unario: trabaja con una variable
+// Operador binario: trabaja con 2 variables
+// Las otras cosas que se vieron fueron otro tipo de operadores, los cuales son similares a los que están
+en Python. En cualquier caso, es recomendable repasar.
