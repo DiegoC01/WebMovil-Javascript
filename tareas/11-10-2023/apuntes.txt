@@ -1,0 +1,16 @@
+// Para subcadenas, se tienen métodos como:
+    - substring(0, 6);
+
+// Para replazar una cadena:
+    - replace():
+    let texto3 = "Estamos en la ULagos";
+    let newTxt = texto3.replace("ULagos", "ULA");
+
+// ¿Te acuerdas del método split()?
+
+// Más métodos (si tienes tiempo):
+    - IndexOf();
+    - toUpperCase()
+    - to....
+
+// IMPORTANTE: operador ternario en JS

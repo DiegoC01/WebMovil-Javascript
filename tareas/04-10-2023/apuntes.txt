@@ -1,0 +1,22 @@
+// Se ocuparán los siguientes ciclos:
+    - While:
+    while(condición){
+        console.log("El ciclo tiene esta forma");
+    }
+    - Do-While:
+    do{
+        // Algo que hacer que se ejecutará por cada iteración, simpre antes de verificar la condición.
+    }
+    while(condición);
+    - For:
+    for(let x = 1; x <=3; x++){
+        // Algo que hacer
+        //Recuerda la forma en la que hay que definir las condiciones.
+    }
+    o
+    let j = 0;
+    for(; j <= 7; j++){
+        //Otra cosa que hacer...
+    }
+// ** Interesante **: let valor = +prompt("Realmente esto se puede hacer????");
+
