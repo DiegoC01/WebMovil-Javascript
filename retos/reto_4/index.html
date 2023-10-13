@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 4 - Calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <!-- Formulario para calcular propina --->
+    <form>
+        <!-- Ingreso nombre -->
+        <label>Nombre: </label>
+        <input type="text" id="ingreso_nombre">
+        <br>
+        <br>
+        <!-- Ingreso peso -->
+        <label>Peso (kg): </label>
+        <input type="number" id="ingreso_peso">
+        <br>
+        <br>
+        <!-- Ingreso altura -->
+        <label>Altura (cm): </label>
+        <input type="number" id="ingreso_altura">
+        <br>
+        <br>
+        <!-- Ingreso edad -->
+        <label>Edad: </label>
+        <input type="number" id="ingreso_edad">
+        <br>
+        <br>
+        <!-- Selccionar genero -->
+        <label>Género: </label>
+        <select name="ingreso_genero" id="ingreso_genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+        <br>
+        <br>
+        <!-- Especificar nivel de actividad física -->
+        <label>Actividad física: </label>
+        <select name="ingreso_actividad_fisica" id="ingreso_actividad_fisica">
+            <option value="1.2">Sedentario</option>
+            <option value="1.55">Moderado</option>
+            <option value="1.9">Activo</option>
+        </select>
+        <br>
+        <br>
+        <!-- Botón de calculo de propina -->
+        <input type="button" name="calcular_imc" id="calcular_imc" value="Calcular" onclick="calcularIMC()">
+        <br>
+        <br>
+    </form>
+
+    <!-- Opciones que permitirán visualizar propina -->
+    <h2 id="titulo_resultados"></h2>
+    <label id="mostrar_imc"></label>
+    <br>
+    <br>
+    <label id="mostrar_clasificacion_imc"></label>
+    <br>
+    <br>
+    <label id="mostrar_gasto_energetico_diario"></label>
+    <br>
+    <br>
+    <label id="mostrar_estado_nutricional"></label>
+
+    <!-- Archivo JS -->
+    <script src="js/reto_4.js"></script>
+</body>
+</html>
