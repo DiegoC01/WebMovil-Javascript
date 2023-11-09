@@ -1,0 +1,30 @@
+VARIABLES
+- Se tiene que especificar el  tipo de de datos.
+- Ejemplos:
+    // const es más estricto que final, que permite "cambiar a media".
+    final double PI = 3.141592;
+    const double e = 2.71;
+
+    print("El valor de e $e");
+- Si no se sabe el tipo de dato, se puede usar var (no recomendado).
+
+- Lista: List numeros = [1, 2, 3]; // List<int> = [1, 2, 3];
+        print(numeros.elementAt(4));
+- print(lista.runtimeType); //Permite saber el tipo...
+
+- List<dynamic> datos = ["A", 0, true];
+
+- numeros.add(6); // Agrega un valor a la cola de la lista.
+- numeros.removeLast(); // Qué crees que hace?
+
+- Hay otro tipo de datos aquí: num. Este es como el "var" de los números, ya que toma cualquier tipo de número.
+- Cómo redondear?: PI.toStringAsFixed(2);
+- Se puede concatenar strings con "+".
+- Se pueden imprimir emoticones. Se llaman runas. Son un pseudotipo de dato.
+
+
+STRINGS
+
+- String parrafo = "hola como estas";
+  String palabraBuscada = "como";
+  bool contienePalabra = parrafo.contains(palabraBuscada);
